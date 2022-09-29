@@ -48,7 +48,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/highlight.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/annaesvensson/yellow-highlight/archive/main.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
 This extension uses [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) by Ivan Sagalaev and Geert Bergman.
 

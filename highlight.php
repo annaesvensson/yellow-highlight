@@ -1,5 +1,5 @@
 <?php
-// Highlight extension, https://github.com/datenstrom/yellow-extensions/tree/master/source/highlight
+// Highlight extension, https://github.com/annaesvensson/yellow-highlight
 
 class YellowHighlight {
     const VERSION = "0.8.14";
