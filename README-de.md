@@ -54,4 +54,4 @@ Diese Erweiterung benutzt [highlight.php 9.18.1.9](https://github.com/scrivo/hig
 
 ## Entwickler
 
-Datenstrom. [Hilfe finden](https://datenstrom.se/de/yellow/help/).
+Anna Svensson. [Hilfe finden](https://datenstrom.se/de/yellow/help/).

@@ -54,4 +54,4 @@ Detta tilläg använder [highlight.php 9.18.1.9](https://github.com/scrivo/highl
 
 ## Utvecklare
 
-Datenstrom. [Få hjälp](https://datenstrom.se/sv/yellow/help/).
+Anna Svensson. [Få hjälp](https://datenstrom.se/sv/yellow/help/).

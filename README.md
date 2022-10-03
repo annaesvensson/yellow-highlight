@@ -54,4 +54,4 @@ This extension uses [highlight.php 9.18.1.9](https://github.com/scrivo/highlight
 
 ## Developer
 
-Datenstrom. [Get help](https://datenstrom.se/yellow/help/).
+Anna Svensson. [Get help](https://datenstrom.se/yellow/help/).
