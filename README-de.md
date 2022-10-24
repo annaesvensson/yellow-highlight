@@ -50,7 +50,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 [Erweiterung herunterladen](https://github.com/annaesvensson/yellow-highlight/archive/main.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
-Diese Erweiterung benutzt [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) von Ivan Sagalaev und Geert Bergman.
+Diese Erweiterung enthält [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) von Ivan Sagalaev und Geert Bergman.
 
 ## Entwickler
 

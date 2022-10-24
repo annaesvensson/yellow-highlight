@@ -50,7 +50,7 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 
 [Ladda ner tillägg](https://github.com/annaesvensson/yellow-highlight/archive/main.zip) och kopiera zip-fil till din `system/extensions` mapp. Högerklicka om du använder Safari.
 
-Detta tilläg använder [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) av Ivan Sagalaev och Geert Bergman.
+Detta tilläg innehåller [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) av Ivan Sagalaev och Geert Bergman.
 
 ## Utvecklare
 
