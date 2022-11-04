@@ -2,7 +2,7 @@
 // Highlight extension, https://github.com/annaesvensson/yellow-highlight
 
 class YellowHighlight {
-    const VERSION = "0.8.14";
+    const VERSION = "0.8.15";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -15,9 +15,9 @@ class YellowHighlight {
     // Handle page content of shortcut
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
-        if (!empty($name) && $type=="code") {
+        if (!is_string_empty($name) && $type=="code") {
             list($language, $attributes, $lineNumber) = $this->getHighlightInformation($name);
-            if (!empty($language)) {
+            if (!is_string_empty($language)) {
                 list($language, $text) = $this->highlight($language, $text);
                 $output = "<pre$attributes>";
                 if (!$lineNumber) {
@@ -71,7 +71,7 @@ class YellowHighlight {
         $language = $attributes = "";
         $attributesData = array("class" => "highlight");
         foreach (explode(" ", $name) as $token) {
-            if (preg_match("/^[\w]+$/", $token) && empty($language)) $language = $token;
+            if (preg_match("/^[\w]+$/", $token) && is_string_empty($language)) $language = $token;
             if (substru($token, 0, 1)==".") $attributesData["class"] = $attributesData["class"]." ".substru($token, 1);
             if (substru($token, 0, 1)=="#") $attributesData["id"] = substru($token, 1);
             if (preg_match("/^([\w]+)=(.+)/", $token, $matches)) $attributesData[$matches[1]] = $matches[2];
