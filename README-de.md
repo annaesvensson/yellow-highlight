@@ -46,11 +46,13 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 `HighlightLineNumber` = Zeilennummer anzeigen, 1 oder 0  
 `HighlightAutodetectLanguages` = Sprachen zur automatischen Erkennung, durch Komma getrennt  
 
+## Danksagung
+
+Diese Erweiterung enthält [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) von Ivan Sagalaev und Geert Bergman. Danke für die tolle Arbeit.
+
 ## Installation
 
 [Erweiterung herunterladen](https://github.com/annaesvensson/yellow-highlight/archive/main.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
-
-Diese Erweiterung enthält [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) von Ivan Sagalaev und Geert Bergman.
 
 ## Entwickler
 

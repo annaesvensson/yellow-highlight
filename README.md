@@ -46,11 +46,13 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `HighlightLineNumber` = show line number, 1 or 0  
 `HighlightAutodetectLanguages` = languages for automatic detection, comma separated  
 
+## Acknowledgments
+
+This extension includes [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) by Ivan Sagalaev and Geert Bergman. Thanks for the great work.
+
 ## Installation
 
 [Download extension](https://github.com/annaesvensson/yellow-highlight/archive/main.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
-
-This extension includes [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) by Ivan Sagalaev and Geert Bergman.
 
 ## Developer
 

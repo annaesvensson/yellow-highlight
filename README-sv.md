@@ -46,11 +46,13 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 `HighlightLineNumber` = visa radnummer, 1 eller 0  
 `HighlightAutodetectLanguages` = språk för automatisk detektering, kommaseparerade  
 
+## Tack
+
+Detta tilläg innehåller [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) av Ivan Sagalaev och Geert Bergman. Tack för det fantastiska arbetet.
+
 ## Installation
 
 [Ladda ner tillägg](https://github.com/annaesvensson/yellow-highlight/archive/main.zip) och kopiera ZIP-fil till din `system/extensions` mapp. [Läs mer om tillägg](https://github.com/annaesvensson/yellow-update/tree/main/README-sv.md).
-
-Detta tilläg innehåller [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) av Ivan Sagalaev och Geert Bergman.
 
 ## Utvecklare
 
