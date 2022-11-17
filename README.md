@@ -48,7 +48,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 ## Acknowledgments
 
-This extension includes [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) by Ivan Sagalaev and Geert Bergman. Thanks for the great work.
+This extension includes [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) by Ivan Sagalaev and Geert Bergman. Thank you for the good work.
 
 ## Installation
 
