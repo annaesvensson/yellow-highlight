@@ -46,7 +46,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `HighlightLineNumber` = show line number, 1 or 0  
 `HighlightAutodetectLanguages` = languages for automatic detection, comma separated  
 
-## Acknowledgments
+## Acknowledgements
 
 This extension includes [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) by Ivan Sagalaev and Geert Bergman. Thank you for the good work.
 
