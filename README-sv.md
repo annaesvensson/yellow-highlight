@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
 
-# Highlight 0.8.15
+# Highlight 0.8.16
 
 Markera källkod.
 
@@ -52,7 +52,7 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 
 ## Tack
 
-Detta tilläg innehåller [highlight.php 9.18.1.9](https://github.com/scrivo/highlight.php) av Ivan Sagalaev och Geert Bergman. Tack för ett bra jobb.
+Detta tilläg innehåller [highlight.php 9.18.1.10](https://github.com/scrivo/highlight.php) av Ivan Sagalaev och Geert Bergman. Tack för ett bra jobb.
 
 ## Utvecklare
 

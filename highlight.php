@@ -2,7 +2,7 @@
 // Highlight extension, https://github.com/annaesvensson/yellow-highlight
 
 class YellowHighlight {
-    const VERSION = "0.8.15";
+    const VERSION = "0.8.16";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -1746,6 +1746,12 @@ class RegExMatch implements \ArrayAccess, \Countable, \IteratorAggregate
 
     /** @var string */
     public $input;
+    
+    /** @var string */
+    public $type;
+    
+    /** @var Mode|string */
+    public $rule;
 
     /**
      * @param array<int, string|null> $results
@@ -1942,7 +1948,6 @@ final class Terminators
 
         if (is_string($rule)) {
             $match->type = $rule;
-            $match->extra = array($this->mode->illegal, $this->mode->terminator_end);
         } else {
             $match->type = "begin";
             $match->rule = $rule;
