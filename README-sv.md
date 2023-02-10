@@ -52,7 +52,7 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 
 ## Tack
 
-Detta tilläg innehåller [highlight.php 9.18.1.10](https://github.com/scrivo/highlight.php) av Ivan Sagalaev och Geert Bergman. Tack för ett bra jobb.
+Detta tillägg innehåller [highlight.php 9.18.1.10](https://github.com/scrivo/highlight.php) av Ivan Sagalaev och Geert Bergman. Tack för ett bra jobb.
 
 ## Utvecklare
 
