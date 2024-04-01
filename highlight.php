@@ -2,7 +2,7 @@
 // Highlight extension, https://github.com/annaesvensson/yellow-highlight
 
 class YellowHighlight {
-    const VERSION = "0.8.16";
+    const VERSION = "0.8.17";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -12,8 +12,8 @@ class YellowHighlight {
         $this->yellow->system->setDefault("highlightAutodetectLanguages", "html, css, javascript, php");
     }
     
-    // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    // Handle page content element
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if (!is_string_empty($name) && $type=="code") {
             list($language, $attributes, $lineNumber) = $this->getHighlightInformation($name);
