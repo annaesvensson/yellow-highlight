@@ -2,7 +2,7 @@
 // Highlight extension, https://github.com/annaesvensson/yellow-highlight
 
 class YellowHighlight {
-    const VERSION = "0.8.17";
+    const VERSION = "0.8.18";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -15,21 +15,17 @@ class YellowHighlight {
     // Handle page content element
     public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
-        if (!is_string_empty($name) && $type=="code") {
-            list($language, $attributes, $lineNumber) = $this->getHighlightInformation($name);
-            if (!is_string_empty($language)) {
-                list($language, $text) = $this->highlight($language, $text);
-                $output = "<pre$attributes>";
-                if (!$lineNumber) {
-                    $output .= "<code class=\"".htmlspecialchars("language-$language")."\">".$text."</code>";
-                } else {
-                    $output .= "<code class=\"".htmlspecialchars("language-$language hljs-with-line-number")."\">";
-                    foreach ($this->yellow->toolbox->getTextLines($text) as $line) {
-                        $output .= "<span class=\"hljs-line-number\"></span>$line";
-                    }
-                    $output .= "</code>";
+        if ($this->isKnownLanguage($name) && $type=="code") {
+            list($language, $text) = $this->processHighlight($name, $text);
+            $htmlAttributes = $this->yellow->lookup->getHtmlAttributes(".highlight $attributes");
+            if (!$this->isWithLineNumber($attributes)) {
+                $output = "<pre$htmlAttributes><code class=\"".htmlspecialchars("language-$language")."\">".$text."</code></pre>";
+            } else {
+                $output = "<pre$htmlAttributes><code class=\"".htmlspecialchars("language-$language hljs-with-line-number")."\">";
+                foreach ($this->yellow->toolbox->getTextLines($text) as $line) {
+                    $output .= "<span class=\"hljs-line-number\"></span>$line";
                 }
-                $output .= "</pre>";
+                $output .= "</code></pre>";
             }
         }
         return $output;
@@ -45,8 +41,8 @@ class YellowHighlight {
         return $output;
     }
     
-    // Highlight
-    public function highlight($language, $text) {
+    // Process highlight
+    public function processHighlight($language, $text) {
         $highlighter = new Highlighter(false);
         $autodetectLanguages = preg_split("/\s*,\s*/", $this->yellow->system->get("highlightAutodetectLanguages"));
         if (!in_array($language, $autodetectLanguages)) array_push($autodetectLanguages, $language);
@@ -66,32 +62,26 @@ class YellowHighlight {
         return array($language, $text);
     }
     
-    // Return highlight information
-    public function getHighlightInformation($name) {
-        $language = $attributes = "";
-        $attributesData = array("class" => "highlight");
-        foreach (explode(" ", $name) as $token) {
-            if (preg_match("/^[\w]+$/", $token) && is_string_empty($language)) $language = $token;
-            if (substru($token, 0, 1)==".") $attributesData["class"] = $attributesData["class"]." ".substru($token, 1);
-            if (substru($token, 0, 1)=="#") $attributesData["id"] = substru($token, 1);
-            if (preg_match("/^([\w]+)=(.+)/", $token, $matches)) $attributesData[$matches[1]] = $matches[2];
-        }
-        foreach ($attributesData as $key=>$value) {
-            $attributes .= " $key=\"".htmlspecialchars($value)."\"";
-        }
-        $lineNumber = intval($this->yellow->system->get("highlightLineNumber"));
-        if (preg_match("/with-line-number/i", $attributesData["class"])) $lineNumber = true;
-        if (preg_match("/without-line-number/i", $attributesData["class"])) $lineNumber = false;
-        return array($language, $attributes, $lineNumber);
-    }
-    
     // Return language information
     public function getLanguageInformation($language) {
         $aliases = array("c" => "cpp", "html" => "xml");
-        $language = isset($aliases[$language]) ? $aliases[$language] : $language;
-        $fileName = $this->yellow->system->get("coreExtensionDirectory")."highlight-$language.json";
-        return array($language, $fileName);
+        $languageId = isset($aliases[$language]) ? $aliases[$language] : $language;
+        $fileName = $this->yellow->system->get("coreExtensionDirectory")."highlight-$languageId.json";
+        return array($languageId, $fileName);
     }
+    
+    // Check if shown with line number
+    public function isWithLineNumber($attributes) {
+        $lineNumber = (bool) $this->yellow->system->get("highlightLineNumber");
+        if (preg_match("/.with-line-number/i", $attributes)) $lineNumber = true;
+        if (preg_match("/.without-line-number/i", $attributes)) $lineNumber = false;
+        return $lineNumber;
+    }
+
+    // Check if known language
+    public function isKnownLanguage($name) {
+        return !is_string_empty($name) ? is_readable($this->getLanguageInformation($name)[1]) : false;
+    }    
 }
 
 /* Highlight.php, https://github.com/scrivo/highlight.php
