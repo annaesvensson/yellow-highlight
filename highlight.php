@@ -2,7 +2,7 @@
 // Highlight extension, https://github.com/annaesvensson/yellow-highlight
 
 class YellowHighlight {
-    const VERSION = "0.8.18";
+    const VERSION = "0.9.1";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -66,7 +66,7 @@ class YellowHighlight {
     public function getLanguageInformation($language) {
         $aliases = array("c" => "cpp", "html" => "xml");
         $languageId = isset($aliases[$language]) ? $aliases[$language] : $language;
-        $fileName = $this->yellow->system->get("coreExtensionDirectory")."highlight-$languageId.json";
+        $fileName = $this->yellow->system->get("coreWorkerDirectory")."highlight-$languageId.json";
         return array($languageId, $fileName);
     }
     

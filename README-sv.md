@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
 
-# Highlight 0.8.18
+# Highlight 0.9.1
 
 Markera källkod.
 
@@ -14,7 +14,7 @@ Markera källkod.
 
 Slå in dina kodblock i \`\`\` och lägg till en språkidentifierare. 
 
-Följande programmeringsspråk ingår: C, CPP, CSS, HTML, JavaScript, JSON, Lua, PHP, Python, YAML. Du kan ladda ner fler [språkfiler](https://github.com/scrivo/highlight.php/tree/master/src/Highlight/languages), byta namn på och kopiera dem till din `system/extensions` mapp.
+Följande programmeringsspråk ingår: C, CPP, CSS, HTML, JavaScript, JSON, Lua, PHP, Python, YAML. Du kan ladda ner fler [språkfiler](https://github.com/scrivo/highlight.php/tree/master/src/Highlight/languages), byta namn på och kopiera dem till din `system/workers` mapp.
 
 ## Exempel
 
