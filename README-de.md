@@ -2,7 +2,7 @@
 
 # Highlight 0.9.2
 
-Quellcode hervorheben.
+Codeblöcke hervorheben.
 
 <p align="center"><img src="SCREENSHOT.png" alt="Bildschirmfoto"></p>
 
@@ -10,15 +10,15 @@ Quellcode hervorheben.
 
 [ZIP-Datei herunterladen](https://github.com/annaesvensson/yellow-highlight/archive/refs/heads/main.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
-## Wie man Quellcode hervorhebt
+## Wie man einen Codeblock hervorhebt
 
-Wickle Codeblöcke in \`\`\` ein und fügen eine Sprachidentifizierung hinzu.
+Wickle deinen Codeblock in \`\`\` ein und fügen eine Sprachidentifizierung hinzu.
 
 Die folgenden Programmiersprachen sind enthalten: C, CPP, CSS, HTML, JavaScript, JSON, Lua, PHP, Python, YAML. Du kannst weitere [Sprachdateien](https://github.com/scrivo/highlight.php/tree/master/src/Highlight/languages) herunterladen, umbenennen und in dein `system/workers`-Verzeichnis kopieren.
 
 ## Beispiele
 
-Hervorhebung von JavaScript-Quellcode:
+Hervorhebung von JavaScript-Code:
 
     ``` javascript
     var ready = function() 
@@ -29,7 +29,7 @@ Hervorhebung von JavaScript-Quellcode:
     window.addEventListener("DOMContentLoaded", ready, false);
     ```
 
-Hervorhebung von HTML-Quellcode, mit und ohne Zeilennummer:
+Hervorhebung von HTML-Code, mit und ohne Zeilennummer:
     
     ``` html {.with-line-number}
     <body>

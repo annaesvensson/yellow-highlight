@@ -2,7 +2,7 @@
 
 # Highlight 0.9.2
 
-Markera källkod.
+Markera kodblock.
 
 <p align="center"><img src="SCREENSHOT.png" alt="Skärmdump"></p>
 
@@ -10,9 +10,9 @@ Markera källkod.
 
 [Ladda ner ZIP-filen](https://github.com/annaesvensson/yellow-highlight/archive/refs/heads/main.zip) och kopiera den till din `system/extensions` mapp. [Läs mer om tillägg](https://github.com/annaesvensson/yellow-update/tree/main/README-sv.md).
 
-## Hur man markerar källkod
+## Hur man markerar ett kodblock
 
-Slå in dina kodblock i \`\`\` och lägg till en språkidentifierare. 
+Slå in ditt kodblock i \`\`\` och lägg till en språkidentifierare. 
 
 Följande programmeringsspråk ingår: C, CPP, CSS, HTML, JavaScript, JSON, Lua, PHP, Python, YAML. Du kan ladda ner fler [språkfiler](https://github.com/scrivo/highlight.php/tree/master/src/Highlight/languages), byta namn på och kopiera dem till din `system/workers` mapp.
 

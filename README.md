@@ -2,7 +2,7 @@
 
 # Highlight 0.9.2
 
-Highlight source code.
+Highlight code blocks.
 
 <p align="center"><img src="SCREENSHOT.png" alt="Screenshot"></p>
 
@@ -10,9 +10,9 @@ Highlight source code.
 
 [Download ZIP file](https://github.com/annaesvensson/yellow-highlight/archive/refs/heads/main.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
-## How to highlight source code
+## How to highlight a code block
 
-Wrap your code blocks in \`\`\` and add a language identifier.
+Wrap your code block in \`\`\` and add a language identifier.
 
 The following programming languages are included: C, CPP, CSS, HTML, JavaScript, JSON, Lua, PHP, Python, YAML. You can download more [language files](https://github.com/scrivo/highlight.php/tree/master/src/Highlight/languages), rename and copy them into your `system/workers` folder.
 
