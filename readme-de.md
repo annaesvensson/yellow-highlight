@@ -19,8 +19,7 @@ Die folgenden Programmiersprachen sind enthalten: C, CPP, CSS, HTML, JavaScript,
 Hervorhebung von JavaScript-Code:
 
     ``` javascript
-    var ready = function() 
-    {
+    var ready = function() {
         console.log("Hello world");
         // Add more JavaScript code here
     }

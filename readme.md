@@ -19,8 +19,7 @@ The following programming languages are included: C, CPP, CSS, HTML, JavaScript,
 Highlighting of JavaScript code:
 
     ``` javascript
-    var ready = function() 
-    {
+    var ready = function() {
         console.log("Hello world");
         // Add more JavaScript code here
     }

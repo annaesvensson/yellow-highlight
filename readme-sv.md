@@ -19,8 +19,7 @@ Följande programmeringsspråk ingår: C, CPP, CSS, HTML, JavaScript, JSON, Lua,
 Markering av JavaScript-kod:
 
     ``` javascript
-    var ready = function() 
-    {
+    var ready = function() {
         console.log("Hello world");
         // Add more JavaScript code here
     }
