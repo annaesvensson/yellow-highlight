@@ -29,13 +29,13 @@ Hervorhebung von HTML-Code, mit und ohne Zeilennummer:
     
     ``` html {.with-line-number}
     <div class="content">
-    <p>Hello world!</p>
+    <p>Hello world</p>
     </div>
     ```
 
     ``` html {.without-line-number}
     <div class="content">
-    <p>Hello world!</p>
+    <p>Hello world</p>
     </div>
     ```
 

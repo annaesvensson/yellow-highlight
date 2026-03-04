@@ -29,13 +29,13 @@ Highlighting of HTML code, with and without line number:
     
     ``` html {.with-line-number}
     <div class="content">
-    <p>Hello world!</p>
+    <p>Hello world</p>
     </div>
     ```
 
     ``` html {.without-line-number}
     <div class="content">
-    <p>Hello world!</p>
+    <p>Hello world</p>
     </div>
     ```
 
