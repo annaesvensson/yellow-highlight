@@ -21,7 +21,6 @@ Hervorhebung von JavaScript-Code:
     ``` javascript
     var ready = function() {
         console.log("Hello world");
-        // Add more JavaScript code here
     }
     window.addEventListener("DOMContentLoaded", ready, false);
     ```
@@ -29,15 +28,15 @@ Hervorhebung von JavaScript-Code:
 Hervorhebung von HTML-Code, mit und ohne Zeilennummer:
     
     ``` html {.with-line-number}
-    <body>
+    <div class="content">
     <p>Hello world!</p>
-    </body>
+    </div>
     ```
 
     ``` html {.without-line-number}
-    <body>
+    <div class="content">
     <p>Hello world!</p>
-    </body>
+    </div>
     ```
 
 ## Einstellungen

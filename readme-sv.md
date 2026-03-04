@@ -21,7 +21,6 @@ Markering av JavaScript-kod:
     ``` javascript
     var ready = function() {
         console.log("Hello world");
-        // Add more JavaScript code here
     }
     window.addEventListener("DOMContentLoaded", ready, false);
     ```
@@ -29,15 +28,15 @@ Markering av JavaScript-kod:
 Markering av HTML-kod, med och utan radnummer:
     
     ``` html {.with-line-number}
-    <body>
+    <div class="content">
     <p>Hello world!</p>
-    </body>
+    </div>
     ```
 
     ``` html {.without-line-number}
-    <body>
+    <div class="content">
     <p>Hello world!</p>
-    </body>
+    </div>
     ```
 
 ## Inställningar

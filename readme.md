@@ -21,7 +21,6 @@ Highlighting of JavaScript code:
     ``` javascript
     var ready = function() {
         console.log("Hello world");
-        // Add more JavaScript code here
     }
     window.addEventListener("DOMContentLoaded", ready, false);
     ```
@@ -29,15 +28,15 @@ Highlighting of JavaScript code:
 Highlighting of HTML code, with and without line number:
     
     ``` html {.with-line-number}
-    <body>
+    <div class="content">
     <p>Hello world!</p>
-    </body>
+    </div>
     ```
 
     ``` html {.without-line-number}
-    <body>
+    <div class="content">
     <p>Hello world!</p>
-    </body>
+    </div>
     ```
 
 ## Settings
