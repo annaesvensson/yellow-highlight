@@ -48,6 +48,6 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 ## Acknowledgements
 
-This extension includes [highlight.php 9.18.1.10](https://github.com/scrivo/highlight.php) by Ivan Sagalaev and Geert Bergman. Thank you for the good work.
+This extension includes [highlight.php 9.18.1.10](https://github.com/scrivo/highlight.php) by Ivan Sagalaev and Geert Bergman. Thank you for the useful library.
 
 Do you have questions? [Get help](https://datenstrom.se/yellow/help/).
