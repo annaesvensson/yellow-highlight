@@ -1,4 +1,4 @@
-# Highlight 1.0.1
+# Highlight 1.0.2
 
 Highlight code blocks. Developed by Anna Svensson.
 

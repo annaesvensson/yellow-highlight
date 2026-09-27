@@ -2,7 +2,7 @@
 // Highlight extension, https://github.com/annaesvensson/yellow-highlight
 
 class YellowHighlight {
-    const VERSION = "1.0.1";
+    const VERSION = "1.0.2";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -36,7 +36,7 @@ class YellowHighlight {
         $output = null;
         if ($name=="header") {
             $assetLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreAssetLocation");
-            $output = "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$assetLocation}highlight.css\" />\n";
+            $output = "<link rel=\"stylesheet\" href=\"{$assetLocation}highlight.css\" />\n";
         }
         return $output;
     }

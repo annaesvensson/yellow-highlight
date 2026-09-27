@@ -1,4 +1,4 @@
-# Highlight 1.0.1
+# Highlight 1.0.2
 
 Codeblöcke hervorheben. Entwickelt von Anna Svensson.
 
